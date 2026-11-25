@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        background-image: url("dimmer_library.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.85);
+        width: 350px;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .statement {
+        font-family: arial;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        margin-top: 0%;
+        margin-bottom: 20px;
+      }
+      .make {
+        font-family: arial;
+        text-align: center;
+        color: white;
+        font-size: 100px;
+        margin-bottom: 5px;
+      }
+      .login {
+        color: #333;
+      }
+      input {
+        width: 90%;
+        padding: 12px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        width: 95%;
+        padding: 12px;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #004c99;
+      }
+      a {
+        text-decoration: none;
+        color: #0066cc;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="make">MakeWay</h2>
+    <p class="statement">Laying the groundwork for tomorrow's success!</p>
+    <div class="container">
+      <h2 class="login">Login</h2>
+      <form action="login.php" method="POST">
+        <input type="text" name="email" placeholder="Enter Email" /><br />
+        <input type="text" name="id" placeholder="Enter ID Number" /><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+        /><br />
+        <button type="submit">Login</button>
+        <p>
+          Don't have an account?
+          <a href="createaccount.html">Create Account</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
