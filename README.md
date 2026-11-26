@@ -165,7 +165,7 @@ Records are sorted using SQL queries with `ORDER BY` statements.
 7. Update database credentials in `db_connect.php`.
 8. Open:
    
-   http://localhost/MakeWayLibrary/library.html
+   http://localhost/MakeWay/library.html
 
 9. Register or log in to access the system.
 
